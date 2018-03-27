@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.less";
-import App from "./App";
-import registerServiceWorker from "./registerServiceWorker";
 import { Provider } from "react-redux";
 import { applyMiddleware, createStore } from "redux";
 import { createLogger } from "redux-logger";
+import registerServiceWorker from "./registerServiceWorker";
 import { reducer } from "./Reducer/index";
+import App from "./Feature/App";
+import "./index.less";
 const logger = createLogger();
 const store = createStore(
   reducer,
