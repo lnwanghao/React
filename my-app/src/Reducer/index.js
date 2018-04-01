@@ -1,10 +1,8 @@
 import { combineReducers } from "redux";
-import { increase } from "./increase";
-import { decrease } from "./decrease";
+import data from "./data";
 
 const reducer = combineReducers({
-  increase: increase,
-  decrease: decrease
+  data
 });
 
 export { reducer };

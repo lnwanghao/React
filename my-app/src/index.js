@@ -9,8 +9,8 @@ import App from "./Feature/App";
 import "./index.less";
 const logger = createLogger();
 const store = createStore(
-  reducer,
-  { increase: 1, decrease: -1 }
+  reducer
+  // { increase: 1, decrease: -1 }
   //   applyMiddleware(logger)
 );
 ReactDOM.render(

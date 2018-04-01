@@ -25,55 +25,58 @@ class Login extends Component {
   };
   render() {
     return (
-      <div className={less.background}>
-        <section className={less.login}>
-          <div className={less.border}>
-            <form>
-              <Input
-                ref={username => (this.username = username)}
-                className={less.input}
-                addonBefore={
-                  <span
-                    style={{
-                      display: "block",
-                      width: "70px",
-                      textAlign: "center"
-                    }}
-                  >
-                    username
-                  </span>
-                }
-                placeholder={"wanghao"}
-              />
-              <Input
-                ref={password => (this.password = password)}
-                type={"password"}
-                addonBefore={
-                  <span
-                    style={{
-                      display: "block",
-                      width: "70px",
-                      textAlign: "center"
-                    }}
-                  >
-                    password
-                  </span>
-                }
-                placeholder={"123456"}
-              />
-              <div className={less.button} onClick={this.login}>
-                <Button type="primary">Login</Button>
-              </div>
-              <input
-                className={less.form}
-                type="submit"
-                value=""
-                onClick={this.login}
-              />
-            </form>
-          </div>
-        </section>
-      </div>
+      <section>
+        <div className={less.info}>后台管理系统</div>
+        <div className={less.background}>
+          <section className={less.login}>
+            <div className={less.border}>
+              <form>
+                <Input
+                  ref={username => (this.username = username)}
+                  className={less.input}
+                  addonBefore={
+                    <span
+                      style={{
+                        display: "block",
+                        width: "70px",
+                        textAlign: "center"
+                      }}
+                    >
+                      username
+                    </span>
+                  }
+                  placeholder={"wanghao"}
+                />
+                <Input
+                  ref={password => (this.password = password)}
+                  type={"password"}
+                  addonBefore={
+                    <span
+                      style={{
+                        display: "block",
+                        width: "70px",
+                        textAlign: "center"
+                      }}
+                    >
+                      password
+                    </span>
+                  }
+                  placeholder={"123456"}
+                />
+                <div className={less.button} onClick={this.login}>
+                  <Button type="primary">Login</Button>
+                </div>
+                <input
+                  className={less.form}
+                  type="submit"
+                  value=""
+                  onClick={this.login}
+                />
+              </form>
+            </div>
+          </section>
+        </div>
+      </section>
     );
   }
 }

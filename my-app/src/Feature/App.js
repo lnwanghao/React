@@ -3,15 +3,17 @@ import {
   BrowserRouter as Router,
   Route,
   Redirect,
-  Link
+  Link,
+  Switch
 } from "react-router-dom";
-import Home from "../Component/home";
+import Home from "./Home";
 import Login from "./Login";
+import NoMatch from "../Component/NoMatch";
 
 const App = () => {
   return (
     <Router>
-      <div style={{ height: "100%" }}>
+      <Switch style={{ height: "100%" }}>
         <Route
           exact
           path="/"
@@ -21,7 +23,8 @@ const App = () => {
           }}
         />
         <Route exact path="/login" render={() => <Login />} />
-      </div>
+        <Route render={() => <NoMatch />} />
+      </Switch>
     </Router>
   );
 };
