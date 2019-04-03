@@ -12,7 +12,7 @@ import NoMatch from "../Component/NoMatch";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch style={{ height: "100%" }}>
         <Route
           exact
