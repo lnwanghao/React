@@ -1,6 +1,6 @@
 # React-Redux
 
-项目链接 [Demo](https://lnwanghao.github.io/React-Redux/)
+项目链接 [Demo](https://lnwanghao.github.io/React/)
 
 #### 安装项目
 

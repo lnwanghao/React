@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lnwanghao.github.io/React-Redux",
+  "homepage": "https://lnwanghao.github.io/React",
   "dependencies": {
     "antd": "^3.3.3",
     "es6-promise": "^4.2.4",
@@ -64,7 +64,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" //GitHub Pages发布
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
